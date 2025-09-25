@@ -33,7 +33,7 @@ jobs:
 
     # 5️⃣ 部署到 GitHub Pages
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3.9.4
+      uses: peaceiris/actions-gh-pages@v4.0.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 自动提供
         publish_dir: ./public                     # Hexo 生成的静态文件夹
