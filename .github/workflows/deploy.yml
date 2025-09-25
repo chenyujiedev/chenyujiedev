@@ -3,7 +3,7 @@ name: Deploy Hexo site to GitHub Pages
 on:
   push:
     branches:
-      - main  # 你存源码的分支
+      - main
 
 jobs:
   build-deploy:
@@ -11,22 +11,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          # 确保获取所有历史，这对 Hexo 有时很重要
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'  # 添加缓存加速
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # 使用 ci 而不是 install，更稳定
 
       - name: Build
-        run: npm run build || npx hexo g
+        run: npx hexo generate  # 明确使用 hexo generate
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          # 可以使用 GITHUB_TOKEN 而不是 PERSONAL_TOKEN
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: chenyujiedev/chenyujiedev.github.io
           publish_branch: gh-pages
           publish_dir: ./public
+          # 添加 commit 信息
+          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
