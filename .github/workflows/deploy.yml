@@ -3,12 +3,11 @@ name: Deploy Hexo site to GitHub Pages
 on:
   push:
     branches:
-      - main   # ⚠️ 这里写你的源码分支，比如 master/main
+      - main  # 你存源码的分支
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -18,15 +17,15 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
       - name: Build
-        run: npx hexo generate
+        run: npm run build || npx hexo g
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages   # 部署到 gh-pages 分支
-          publish_dir: ./public      # Hexo 生成的静态目录
+          publish_branch: gh-pages
+          publish_dir: ./public
