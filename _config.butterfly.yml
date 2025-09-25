@@ -1095,7 +1095,7 @@ envelope_comment:
 # 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
 flink_style:
   enable: false # butterfly | volantis | flexcard
-
+  type: volantis
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
