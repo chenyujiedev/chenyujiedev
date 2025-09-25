@@ -1,0 +1,35 @@
+name: Hexo Deploy
+
+on:
+  push:
+    branches:
+      - main  # 监听源码仓库的 main 分支
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: false  # 不使用默认 token
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Generate static files
+      run: npx hexo clean && npx hexo g
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v7
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
+        destination_branch: main  # 发布仓库的分支
+        publish_repo: chenyujiedev/chenyujiedev.github.io
