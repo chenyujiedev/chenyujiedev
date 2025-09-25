@@ -33,7 +33,7 @@ jobs:
           # 可以使用 GITHUB_TOKEN 而不是 PERSONAL_TOKEN
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: chenyujiedev/chenyujiedev.github.io
-          publish_branch: gh-pages
+          publish_branch: main
           publish_dir: ./public
           # 添加 commit 信息
           commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
