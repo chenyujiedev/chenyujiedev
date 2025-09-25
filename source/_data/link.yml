@@ -1,10 +1,13 @@
-- class_name: 0.推荐网站🍔
-  class_desc: 这里是最熟悉的小伙伴或者赞助商，当然是最前排啦
-  link_list: 
-#    - name: Fomalhaut🥝
-#      link: https://www.fomal.cc/
-#      avatar: https://www.fomal.cc/assets/avatar.webp
-#      descr: Future is now 🍭🍭🍭
-#      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
-
-
+- class_name: 示例分类
+  class_desc: 这是测试分类描述
+  link_list:
+    - name: Google
+      link: https://www.google.com
+      desc: 测试链接
+      avatar: https://via.placeholder.com/100x100?text=G
+      siteshot: https://via.placeholder.com/600x400?text=G+Site
+    - name: Hexo
+      link: https://hexo.io
+      desc: Hexo 官方网站
+      avatar: https://via.placeholder.com/100x100?text=H
+      siteshot: https://via.placeholder.com/600x400?text=Hexo
