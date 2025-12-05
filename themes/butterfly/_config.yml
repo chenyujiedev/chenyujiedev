@@ -23,6 +23,16 @@ highlight_shrink: false # true: shrink the code blocks / false: expand the code 
 highlight_height_limit: false # unit: px
 code_word_wrap: false
 
+codeblock:
+  enable: true
+  linenumber: true
+  copy_btn: true
+  shrink_btn: true
+  full_btn: true
+  highlight: true
+  fold: false
+  fold_height: 0
+
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
