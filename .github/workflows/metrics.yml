@@ -1,0 +1,56 @@
+name: Generate metrics panel
+
+on:
+  schedule:
+    # 每天 UTC 00:20 重新生成一次（错开 snake 的 00:00）
+    - cron: "20 0 * * *"
+  workflow_dispatch:
+
+# 只推送到 metrics 分支，不会触发 deploy.yml（它只监听 main）
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      # token 用内置的 GITHUB_TOKEN 即可覆盖公开仓库数据。
+      # 若日后想统计私有仓库，可创建一个 scope 为 read:user + repo 的 PAT，
+      # 存为仓库 secret METRICS_TOKEN，再把下面两处 token 改成 secrets.METRICS_TOKEN。
+      - name: Metrics (light)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: chenyujiedev
+          filename: metrics.svg
+          template: classic
+          base: header, repositories
+          config_timezone: Asia/Seoul
+          config_theme: light
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: percentage
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          output_action: commit
+          committer_branch: metrics
+          committer_message: "chore: update metrics (light) [skip ci]"
+
+      - name: Metrics (dark)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: chenyujiedev
+          filename: metrics.dark.svg
+          template: classic
+          base: header, repositories
+          config_timezone: Asia/Seoul
+          config_theme: dark
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: percentage
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          output_action: commit
+          committer_branch: metrics
+          committer_message: "chore: update metrics (dark) [skip ci]"

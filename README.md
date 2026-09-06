@@ -96,10 +96,11 @@ labs, assignments, exams and student project supervision. Also built a big-data 
 
 <div align="center">
 
-<img height="150" src="https://github-readme-stats.vercel.app/api?username=chenyujiedev&show_icons=true&hide_border=true&bg_color=00000000&title_color=58A6FF&text_color=8B949E&icon_color=58A6FF&include_all_commits=true" alt="GitHub stats" />
-<img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chenyujiedev&layout=compact&hide_border=true&bg_color=00000000&title_color=58A6FF&text_color=8B949E&langs_count=8" alt="Top languages" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=chenyujiedev&bg_color=00000000&color=58A6FF&line=58A6FF&point=8B949E&area=true&hide_border=true" alt="Contribution activity graph" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chenyujiedev/chenyujiedev/metrics/metrics.dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chenyujiedev/chenyujiedev/metrics/metrics.svg" />
+  <img width="540" src="https://raw.githubusercontent.com/chenyujiedev/chenyujiedev/metrics/metrics.svg" alt="GitHub metrics: repositories, top languages and contribution calendar" />
+</picture>
 
 </div>
 
