@@ -7,6 +7,10 @@ on:
   workflow_dispatch:
 
 # 只推送到 output 分支，不会触发 deploy.yml（它只监听 main）
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
