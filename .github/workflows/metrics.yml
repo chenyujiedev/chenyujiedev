@@ -32,6 +32,12 @@ jobs:
           plugin_languages_details: percentage
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+          plugin_achievements_display: compact
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
           output_action: commit
           committer_branch: metrics
           committer_message: "chore: update metrics (light) [skip ci]"
@@ -51,6 +57,12 @@ jobs:
           plugin_languages_details: percentage
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          plugin_achievements: yes
+          plugin_achievements_threshold: C
+          plugin_achievements_display: compact
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
           output_action: commit
           committer_branch: metrics
           committer_message: "chore: update metrics (dark) [skip ci]"
