@@ -1,9 +1,9 @@
 name: Deploy Hexo site to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  # 站点已迁移到 al-folio（仓库 chenyujiedev.github.io）。
+  # 保留此流程仅供回滚使用，不再自动触发。
+  workflow_dispatch:
 
 jobs:
   build-deploy:
