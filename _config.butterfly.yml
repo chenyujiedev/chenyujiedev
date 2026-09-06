@@ -697,7 +697,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 低光视觉 · 目标检测
     button:
       enable: true
       icon: # fab fa-github
@@ -913,7 +913,6 @@ inject:
     - <style id="transPercent"></style> # 透明度调节
     - <style id="blurNum"></style> # 模糊半径调节
     - <style id="settingStyle"></style> # 模糊效果开关
-    - <span id="fps"></span> # 帧率检测
     - <style id="defineBg"></style> # 自定义背景选项
     - <style id="menu_shadow"></style> # 菜单发光样式
 

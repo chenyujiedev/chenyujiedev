@@ -4,9 +4,9 @@
 
 # Site
 title: YuJieのBlog🥝
-subtitle: 
-description: 'Future is now 🍭🍭🍭'
-keywords: 'Java,AI,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝'
+subtitle: 'Low-light Vision · Object Detection'
+description: '低光视觉与目标检测方向的研究笔记，兼课程与工程记录。'
+keywords: '低光视觉,目标检测,计算机视觉,深度学习,PyTorch,研究笔记,YuJie'
 author: YuJie🥝
 language: zh-CN
 timezone: ''
