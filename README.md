@@ -110,7 +110,7 @@ labs, assignments, exams and student project supervision. Also built a big-data 
 
 Graduate coursework kept public for reference:
 [Adaptive CLAHE + Gamma](https://github.com/chenyujiedev/Adaptive-CLAHE-Gamma) ·
-[Advanced Algorithm Design & Analysis](https://github.com/chenyujiedev/Advanced-Algorithm-Design-and-Analysis-50070) ·
+[Advanced Algorithm Design & Analysis](https://github.com/chenyujiedev/Advanced-Algorithm-Design-and-Analysis-50070-) ·
 [Advanced Distributed Systems](https://github.com/chenyujiedev/Advanced-Distributed-Systems) ·
 [Machine Learning](https://github.com/chenyujiedev/homeWorkOfML)
 
