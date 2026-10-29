@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=170&section=header&text=Chen%20Yujie&fontSize=52&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=%EC%A7%84%EC%9A%B0%EA%B1%B8%20%C2%B7%20Computer%20Vision%20Researcher&descAlignY=58&descSize=15" alt="Chen Yujie" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=170&section=header&text=Chen%20Yujie&fontSize=52&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=%E9%99%88%E5%AE%87%E6%9D%B0%20%C2%B7%20Computer%20Vision%20Researcher&descAlignY=58&descSize=15" alt="Chen Yujie" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&width=560&lines=Computer+Vision+%7C+Low-Light+Vision+%7C+Object+Detection" alt="Computer Vision | Low-Light Vision | Object Detection" />
 
