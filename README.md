@@ -4,7 +4,6 @@
 
 <p>
   <a href="https://chenyujiedev.github.io"><img src="https://img.shields.io/badge/Homepage-222222?style=for-the-badge&logo=githubpages&logoColor=white" alt="Homepage" /></a>
-  <a href="https://www.linkedin.com/in/yujie-chen-342467190/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:echenuiyj@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <!-- 拿到链接后取消注释即可启用：
   <a href="GOOGLE_SCHOLAR_URL"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
