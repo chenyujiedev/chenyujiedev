@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=170&section=header&text=Chen%20Yujie&fontSize=52&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=%E9%99%88%E5%AE%87%E6%9D%B0%20%C2%B7%20Computer%20Vision%20Researcher&descAlignY=58&descSize=15" alt="Chen Yujie" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&width=560&lines=Computer+Vision+%7C+Low-Light+Vision+%7C+Object+Detection" alt="Computer Vision | Low-Light Vision | Object Detection" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=24292f&height=170&section=header&text=Chen%20Yujie&fontSize=52&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=%E9%99%88%E5%AE%87%E6%9D%B0%20%C2%B7%20PhD%20Student%20in%20Computer%20Vision&descAlignY=58&descSize=15" alt="Chen Yujie" />
 
 <p>
   <a href="https://chenyujiedev.github.io"><img src="https://img.shields.io/badge/Homepage-222222?style=for-the-badge&logo=githubpages&logoColor=white" alt="Homepage" /></a>
@@ -20,10 +18,10 @@
 
 ### About
 
-I work on **low-light computer vision** — how detectors and enhancers fail when photons are scarce,
-and what actually recovers the signal instead of just making the picture brighter.
+I work on **visual perception and image restoration under adverse imaging conditions**: low light,
+sensor noise and glare, where images lose the information that ordinary models rely on.
 
-- **PhD student**, Computer Science, **Youngsan University** (from Sep 2026) · advisor: Prof. Jung Minpo
+- **PhD student**, Computer Science, **Youngsan University** (since Sep 2026) · advisor: Prof. MinPo Jung
 - **MSc**, Computer Science, Youngsan University — GPA **4.4 / 4.5**
 - **BEng**, Computer Science & Technology, Concord University College, Fujian Normal University
 - Previously **4 years as a Senior Software Instructor** — full-semester CS courses at ~11 universities and enterprise programs, 1,000+ learners
@@ -31,31 +29,25 @@ and what actually recovers the signal instead of just making the picture brighte
 
 ---
 
-### Research & Publications
+### Research
 
-**DOLENet — Detection-Oriented Low-light Enhancement**
-`first author` · *journal paper in preparation* · 2026–present
+- **Object detection in low light**: detectors that hold up in the dark without extra inference cost
+- **Low-light image enhancement and denoising**: removing the noise that brightening amplifies
+- **Document image restoration**: removing specular glare from photographed documents
+- **Efficient deployment**: keeping detectors accurate after quantization for edge devices
 
-Enhancement is usually optimized to look good to humans, then bolted onto a detector. DOLENet asks the
-opposite question: what should enhancement do if its only consumer is a detector? Current work covers
-multi-seed **YOLOv8 / ExDark** experiments, gradient-conflict analysis, and TP/FP/FN error decomposition.
-
-**MSc Thesis — Deep-Learning Low-light Image Enhancement**
-`2025–2026`
-
-Zero-reference training, local illumination balancing and shadow recovery — without adding inference cost.
+Two first-author journal manuscripts are under review and two more are in preparation.
+Papers and code will be listed here once accepted.
 
 ---
 
 ### Featured Projects
 
-**[paper-Experiment](https://github.com/chenyujiedev/paper-Experiment)** — code behind the thesis work
+**[paper-Experiment](https://github.com/chenyujiedev/paper-Experiment)** — code behind my MSc thesis on low-light image enhancement
 
 - Two loss functions of my own design on the Zero-DCE framework: `DarkRegionExposureLoss` (region-specific exposure supervision) and `HighlightPreservationLoss` (guards against over-enhancement)
 - Benchmarked against **Retinexformer** and **RUAS**
 - Evaluated on no-reference (**NIQE**, **BRISQUE**, **LOE**) and full-reference (**PSNR**, **SSIM**, **LPIPS**) metrics
-
-**[chenyujiedev.github.io](https://chenyujiedev.github.io)** — personal site: research notes and write-ups
 
 ---
 
@@ -83,13 +75,8 @@ labs, assignments, exams and student project supervision. Also built a big-data 
   <img src="https://img.shields.io/badge/YOLO-111F68?style=flat-square&logo=yolo&logoColor=white" alt="YOLO" />
   <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA" />
-  <br />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue.js" />
-  <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 </p>
 
 ---
@@ -118,12 +105,6 @@ Graduate coursework kept public for reference:
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chenyujiedev/chenyujiedev/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chenyujiedev/chenyujiedev/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/chenyujiedev/chenyujiedev/output/github-snake.svg" alt="Snake eating my contribution graph" />
-</picture>
-
-<sub>This repository also hosts the Hexo source for <a href="https://chenyujiedev.github.io">chenyujiedev.github.io</a>.</sub>
+<sub>The site source is in <a href="https://github.com/chenyujiedev/chenyujiedev.github.io">chenyujiedev.github.io</a>; this repository keeps the old Hexo version.</sub>
 
 </div>
